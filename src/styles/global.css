@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* background-color: #14151d; */
+  /* font-size: 14px; */
+  --brand: #9282fa;
+
+  --content-primary: #ffffff;
+  --content-secondary: #98959d;
+  --content-tertiary: #666666;
+
+  --background-primary: #151515;
+  --background-secondary: #1e1e1e;
+  --background-tertiary: #23242c;
+  --background-highlights: #bdb4fa;
+
+  --border-primary: #3e3c41;
+  --border-secondary: #86818c;
+  --border-divisor: #353339;
+
+  --accent-blue: #027df0;
+  --accent-blue-light: #16487a;
+  --accent-yellow: #f0dc02;
+  --accent-yellow-light: #756e1b;
+  --accent-orange: #f09102;
+  --accent-orange-light: #75501b;
+
+  --ff-inter: "Inter", sans-serif;
+
+  --title: 700 1.5rem/32px "Inter Tight", sans-serif;
+
+  --p-md: 500 14px/24px var(--ff-inter);
+  --p-sm: 500 12px/16px var(--ff-inter);
+
+  --label-lg: 700 16px/24px var(--ff-inter);
+  --label-md: 700 14px/24px var(--ff-inter);
+  --label-sm: 700 12px/16px var(--ff-inter);
+
+  --link: 500 12px/24px var(--ff-inter);
+}
+
+body {
+  font-family: var(--ff-inter);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: #2e2c30;
+  padding: 0.75rem 1.25rem;
+  border-bottom-right-radius: 0.75rem;
+
+  height: 3.5rem;
+  width: 8.7rem;
+}
+
+@media (min-width: 600px) {
+  :root {
+    font-size: 16px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: calc(100vh - 1.5rem);
+    grid-template-areas: "form schedule";
+
+    padding: 0.75rem;
+  }
+}
