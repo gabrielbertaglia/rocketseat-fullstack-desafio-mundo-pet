@@ -27,4 +27,12 @@ module.exports = {
       favicon: path.resolve("src", "assets/favicon.svg"),
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };
