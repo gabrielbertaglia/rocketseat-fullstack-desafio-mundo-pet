@@ -5,8 +5,8 @@
 }
 
 :root {
-  /* background-color: #14151d; */
-  /* font-size: 14px; */
+  background-color: #14151d;
+  font-size: 14px;
   --brand: #9282fa;
 
   --content-primary: #ffffff;
@@ -61,8 +61,8 @@ body {
   padding: 0.75rem 1.25rem;
   border-bottom-right-radius: 0.75rem;
 
-  height: 3.5rem;
-  width: 8.7rem;
+  height: 3.75rem;
+  width: 10.3125rem;
 }
 
 @media (min-width: 600px) {
