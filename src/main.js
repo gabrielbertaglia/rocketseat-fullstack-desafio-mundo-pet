@@ -6,3 +6,5 @@ import "./libs/dayjs.js";
 
 // CSS
 import "./styles/global.css";
+import "./styles/input.css";
+import "./styles/schedule.css";

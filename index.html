@@ -14,21 +14,26 @@
     <title>Pet Shop</title>
   </head>
   <body>
-    <div class="container">
-      <img src="./src/assets/logo.svg" alt="Logo" class="logo" />
+    <!-- <div class="container"> -->
+    <img src="./src/assets/logo.svg" alt="Logo" class="logo" />
 
-      <div class="schedule">
-        <header>
-          <div class="header-title">
-            <h1 class="title">Sua agenda</h1>
-            <p class="p-md">
-              Aqui você pode ver todos os clientes e serviços agendados para
-              hoje.
-            </p>
-          </div>
-          <input type="date" name="filter" id="filter" />
-        </header>
+    <div class="schedule">
+      <header class="top-header">
+        <div class="header-title">
+          <h1 class="title">Sua agenda</h1>
+          <p class="p-md">
+            Aqui você pode ver todos os clientes e serviços agendados para hoje.
+          </p>
+        </div>
+        <div class="input">
+          <i>
+            <img src="./src/assets/icons/calendar.svg" alt="Calendário" />
+          </i>
+          <input type="date" id="date" name="date" />
+        </div>
+      </header>
 
+      <div class="section-content">
         <section class="schedule-period">
           <header>
             <img src="./src/assets/icons/sum-fog.svg" alt="Manhã" />
@@ -39,13 +44,13 @@
           <ul id="period-morning" class="period">
             <li>
               <!-- <div> -->
-              <strong>09:00</strong>
+              <strong class="hour" id>09:00</strong>
               <span>
-                <strong class="pat-name">Thor</strong>
+                <strong class="pet-name">Thor</strong>
                 <span class="person-name">/ Fernanda Costa</span>
               </span>
               <span class="precedure">Vacinação</span>
-              <span class="remove-schedule">Remover agendamento</span>
+              <button class="remove-schedule">Remover agendamento</button>
               <!-- </div> -->
             </li>
           </ul>
@@ -61,35 +66,35 @@
           <ul id="period-afternoon" class="period">
             <li>
               <!-- <div> -->
-              <strong>13:00</strong>
+              <strong class="hour">13:00</strong>
               <span>
-                <strong class="pat-name">Mel</strong>
+                <strong class="pet-name">Mel</strong>
                 <span class="person-name">/ João Souza</span>
               </span>
               <span class="precedure">Corte de Unhas</span>
-              <span class="remove-schedule">Remover agendamento</span>
+              <button class="remove-schedule">Remover agendamento</button>
               <!-- </div> -->
             </li>
             <li>
               <!-- <div> -->
-              <strong>14:00</strong>
+              <strong class="hour">14:00</strong>
               <span>
-                <strong class="pat-name">Bella</strong>
+                <strong class="pet-name">Bella</strong>
                 <span class="person-name">/ Pedro Martins</span>
               </span>
               <span class="precedure">Aplicação de Anti-pulgas</span>
-              <span class="remove-schedule">Remover agendamento</span>
+              <button class="remove-schedule">Remover agendamento</button>
               <!-- </div> -->
             </li>
             <li>
               <!-- <div> -->
-              <strong>15:00</strong>
+              <strong class="hour">15:00</strong>
               <span>
-                <strong class="pat-name">Simba</strong>
+                <strong class="pet-name">Simba</strong>
                 <span class="person-name">/ Juliana Rocha</span>
               </span>
               <span class="precedure">Tosa Higiênica</span>
-              <span class="remove-schedule">Remover agendamento</span>
+              <button class="remove-schedule">Remover agendamento</button>
               <!-- </div> -->
             </li>
           </ul>
@@ -105,22 +110,23 @@
           <ul id="period-night" class="period">
             <li>
               <!-- <div> -->
-              <strong>20:00</strong>
+              <strong class="hour">20:00</strong>
               <span>
-                <strong class="pat-name">Max</strong>
+                <strong class="pet-name">Max</strong>
                 <span class="person-name">/ Camila Santos</span>
               </span>
               <span class="precedure">Limpeza de Dentes</span>
-              <span class="remove-schedule">Remover agendamento</span>
+              <button class="remove-schedule">Remover agendamento</button>
               <!-- </div> -->
             </li>
           </ul>
         </section>
       </div>
-    </div>
 
-    <footer>
-      <button class="btn-new-schedule">NOVO AGENDAMENTO</button>
-    </footer>
+      <footer>
+        <button class="btn-new-schedule">NOVO AGENDAMENTO</button>
+      </footer>
+    </div>
+    <!-- </div> -->
   </body>
 </html>

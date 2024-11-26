@@ -1,0 +1,199 @@
+.schedule .top-header {
+  padding: 12px 20px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.schedule > header > div > .title {
+  font: var(--title);
+  color: var(--content-primary);
+}
+
+.schedule > header > div > .p-md {
+  font: var(--p-md);
+  color: var(--content-secondary);
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  padding-inline: 20px;
+  padding-bottom: 12px;
+}
+
+.schedule-period {
+  background-color: var(--background-tertiary);
+  border-radius: 8px;
+}
+
+.schedule-period header {
+  display: flex;
+  width: 100%;
+  padding: 12px;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-divisor);
+}
+
+.schedule-period header img {
+  margin-right: 12px;
+}
+
+.schedule-period header strong {
+  flex: 1;
+  font: var(--label-lg);
+  color: var(--content-primary);
+}
+
+.schedule-period header span {
+  font: var(--label-lg);
+  color: var(--content-secondary);
+}
+
+.schedule-period ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.schedule-period ul li {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-divisor);
+
+  padding: 12px;
+
+  display: grid;
+  /* grid-template-columns: auto 1fr 1fr 1fr; */
+  grid-template-areas:
+    "hour name"
+    "procedure procedure"
+    "button button";
+  grid-template-columns: auto 1fr;
+
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.schedule-period .hour {
+  grid-area: hour;
+  font: var(--label-sm);
+  color: var(--content-primary);
+}
+
+.schedule-period .pet-name {
+  grid-area: name;
+  font: var(--label-sm);
+  color: var(--content-primary);
+}
+
+.schedule-period .person-name {
+  font: var(--label-sm);
+  color: var(--content-secondary);
+}
+
+.schedule-period .precedure {
+  grid-area: procedure;
+  font: var(--p-sm);
+  color: var(--content-secondary);
+}
+
+.remove-schedule {
+  grid-area: button;
+  justify-self: end;
+  font: var(--p-sm);
+  color: var(--content-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* .schedule-period .remove-schedule {
+  margin-left: auto;
+} */
+
+.schedule-period .person-name {
+  width: 15%;
+}
+
+.btn-new-schedule {
+  border: none;
+  background-color: var(--brand);
+
+  font: var(--label-lg);
+
+  padding: 12px 24px;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  box-shadow: -1px 2px 39px -8px rgba(146, 130, 250, 0.3);
+  -webkit-box-shadow: -1px 2px 39px -8px rgba(146, 130, 250, 0.3);
+  -moz-box-shadow: -1px 2px 39px -8px rgba(146, 130, 250, 0.3);
+}
+
+.btn-new-schedule:hover {
+  background-color: var(--background-highlights);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-tertiary);
+  margin-top: 52px;
+  padding: 18px 20px;
+  /* margin-left: auto; */
+}
+
+@media (min-width: 600px) {
+  .schedule {
+    padding: 5rem;
+
+    max-width: 871px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .schedule .top-header {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: unset;
+    padding-bottom: 32px;
+  }
+
+  .section-content {
+    padding-inline: unset;
+    padding-bottom: unset;
+  }
+
+  .schedule-period ul li {
+    display: grid;
+    grid-template-areas: "hour name procedure button";
+    grid-template-columns: auto 1fr 1fr auto;
+    gap: 16px;
+    align-items: center;
+    padding: 16px 12px;
+  }
+
+  .schedule-period .precedure {
+    text-align: left; /* Certifica-se de que o texto esteja alinhado à esquerda */
+  }
+
+  footer {
+    margin-left: auto;
+    padding-top: 32px;
+
+    width: unset;
+    background-color: unset;
+
+    margin-top: 0px;
+  }
+}
