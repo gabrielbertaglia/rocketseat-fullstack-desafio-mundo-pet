@@ -124,9 +124,94 @@
       </div>
 
       <footer>
-        <button class="btn-new-schedule">NOVO AGENDAMENTO</button>
+        <button class="btn-schedule" id="open-modal">NOVO AGENDAMENTO</button>
       </footer>
     </div>
+
+    <dialog id="modal">
+      <h2>Agende um atendimento</h2>
+      <p>Preencha os dados do cliente para realizar o agendamento:</p>
+      <form>
+        <!-- <label for="tutor">Nome do tutor</label>
+        <input type="text" id="tutor" placeholder="Helena Souza" /> -->
+
+        <div class="input-wrapper">
+          <label for="tutor">Nome do tutor</label>
+
+          <div class="input">
+            <i>
+              <img src="./src/assets/icons/user.svg" alt="Ícone do usuário" />
+            </i>
+            <input type="text" id="tutor" placeholder="Helena Souza" />
+          </div>
+          </div>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="pet">Nome do pet</label>
+
+          <div class="input">
+            <i>
+              <img src="./src/assets/icons/pet-paw.svg" alt="Ícone do usuário" />
+            </i>
+            <input type="text" id="pet" placeholder="Cheddar" />
+          </div>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="telefone">Telefone</label>
+
+          <div class="input">
+            <i>
+              <img src="./src/assets/icons/phone.svg" alt="Ícone do usuário" />
+            </i>
+            <input type="text" id="telefone" placeholder="(00) 0 0000-0000" />
+          </div>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="descricao">Descrição do serviço</label>
+          <div class="input-area">
+            <textarea id="descricao" placeholder="Banho e tosa"></textarea>
+          </div>
+        </div>
+
+        <div class="datetime">
+          <!-- <div class="teste">
+            <label for="data">Data</label>
+            <input type="date" id="data" />
+          </div> -->
+
+          <div class="input-wrapper">
+            <label for="date">Data</label>
+            <div class="input">
+              <i>
+                <img src="./src/assets/icons/calendar.svg" alt="Calendário" />
+              </i>
+              <input type="date" id="filter" name="filter" />
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="hora">Hora</label>
+            <div class="input">
+              <i>
+                <img src="./src/assets/icons/clock.svg" alt="Calendário" />
+              </i>
+              <input type="time" id="filter" name="filter" />
+            </div>
+          </div>
+
+          <!-- <div class="teste">
+            <input type="time" id="hora" />
+          </div> -->
+        </div>
+
+        <div class="footer">
+          <button type="submit" class="btn-schedule">Agendar</button>
+        </div>
+      </form>
+    </dialog>
     <!-- </div> -->
   </body>
 </html>

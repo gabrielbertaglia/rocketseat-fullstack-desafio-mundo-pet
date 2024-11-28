@@ -1,0 +1,55 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+dialog {
+  background-color: var(--background-tertiary);
+  border: none;
+  border-radius: 0.75rem;
+  padding: 2.5rem;
+  min-width: 477px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+dialog h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+dialog p {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: #d1d1d6;
+}
+
+label {
+  display: block;
+  font: var(--label-md);
+  color: var(--content-primary);
+}
+
+.datetime {
+  display: flex;
+  gap: 1rem;
+}
+
+.datetime input {
+  flex: 1;
+}
+
+.teste {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+  padding-top: 12px;
+}

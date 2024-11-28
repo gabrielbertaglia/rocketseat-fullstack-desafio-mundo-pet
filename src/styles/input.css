@@ -1,5 +1,12 @@
+.input-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #fff;
+}
+
 .input {
-  width: fit-content;
   height: 3rem;
 
   border: 1px solid var(--border-primary);
@@ -7,16 +14,25 @@
   border-radius: 0.5rem;
 
   display: flex;
-  /* margin-bottom: 2rem; only mobile */
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  padding: 8px 12px;
 }
 
 .input i {
   margin-right: 0.5rem;
 }
 
-.input input {
+input,
+textarea {
   flex: 1;
-
   font-family: var(--ff-inter);
 
   font-size: 1rem;
@@ -27,11 +43,18 @@
   border: none;
 }
 
-.input:hover {
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.input:hover,
+.input-area:hover {
   border: 1.5px solid var(--border-secondary);
 }
 
-.input:focus-within {
+.input:focus-within,
+.input-area:focus-within {
   border: 1.5px solid var(--brand);
 }
 
