@@ -142,7 +142,7 @@
             <i>
               <img src="./src/assets/icons/user.svg" alt="Ícone do usuário" />
             </i>
-            <input type="text" id="tutor" placeholder="Helena Souza" />
+            <input type="text" id="tutor" placeholder="Helena Souza" required />
           </div>
           </div>
         </div>
@@ -154,7 +154,7 @@
             <i>
               <img src="./src/assets/icons/pet-paw.svg" alt="Ícone do usuário" />
             </i>
-            <input type="text" id="pet" placeholder="Cheddar" />
+            <input type="text" id="pet" placeholder="Cheddar" required />
           </div>
         </div>
 
@@ -165,40 +165,35 @@
             <i>
               <img src="./src/assets/icons/phone.svg" alt="Ícone do usuário" />
             </i>
-            <input type="text" id="telefone" placeholder="(00) 0 0000-0000" />
+            <input type="text" id="phone" placeholder="(00) 0 0000-0000" required />
           </div>
         </div>
 
         <div class="input-wrapper">
           <label for="descricao">Descrição do serviço</label>
           <div class="input-area">
-            <textarea id="descricao" placeholder="Banho e tosa"></textarea>
+            <textarea required id="service" placeholder="Banho e tosa"></textarea>
           </div>
         </div>
 
         <div class="datetime">
-          <!-- <div class="teste">
-            <label for="data">Data</label>
-            <input type="date" id="data" />
-          </div> -->
-
           <div class="input-wrapper">
             <label for="date">Data</label>
             <div class="input">
               <i>
                 <img src="./src/assets/icons/calendar.svg" alt="Calendário" />
               </i>
-              <input type="date" id="filter" name="filter" />
+              <input required type="date" id="date" name="date" />
             </div>
           </div>
 
           <div class="input-wrapper">
-            <label for="hora">Hora</label>
+            <label for="date">Hora</label>
             <div class="input">
               <i>
                 <img src="./src/assets/icons/clock.svg" alt="Calendário" />
               </i>
-              <input type="time" id="filter" name="filter" />
+              <input type="time" id="time" name="time" required />
             </div>
           </div>
 
