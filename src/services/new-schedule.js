@@ -1,9 +1,11 @@
+import dayjs from "dayjs";
 import { apiConfig } from "./api-config";
 
 export const newSchedule = async (data) => {
   const { id, tutorName, petName, phone, service, date, time } = data;
 
-  console.log(data);
+  const when = dayjs(`${date} ${time}`).toISOString();
+
   try {
     await fetch(`${apiConfig.baseUrl}/schedules`, {
       method: "POST",
@@ -16,8 +18,7 @@ export const newSchedule = async (data) => {
         petName,
         phone,
         service,
-        date,
-        time,
+        when,
       }),
     });
   } catch (error) {

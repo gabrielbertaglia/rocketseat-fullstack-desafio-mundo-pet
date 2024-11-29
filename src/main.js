@@ -13,3 +13,5 @@ import "./styles/schedule.css";
 //JS
 import "./modules/form/submit.js";
 import "./modules/modal/index.js";
+import "./modules/page-load.js";
+import "./modules/schedule/filter-date-change.js";
