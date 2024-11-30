@@ -1,5 +1,6 @@
 import dayjs from "dayjs";
 import { newSchedule } from "../../services/new-schedule";
+import { schedulesDay } from "../schedule/load";
 
 const form = document.querySelector("form");
 
@@ -57,6 +58,9 @@ form.onsubmit = async (event) => {
     };
 
     await newSchedule(data);
+    await schedulesDay();
+    modal.close();
+    form.reset();
   } catch (error) {
     console.log(error);
     // alert("Não foi possível realizar o agendamento");
